@@ -21,3 +21,21 @@ btn.addEventListener('click', () => {
     return;
 })
 
+function copy() {
+    /* Get the text field */
+    var copyText = document.getElementById("output");
+    var copiedBox = document.getElementById('p')
+    /* Select the text field */
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    copiedBox.classList.remove('none')
+    setTimeout(()=> {
+        copiedBox.classList.add('none');
+    },1000)
+  }
+

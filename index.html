@@ -10,9 +10,20 @@
 <body>
 
 <div class="container">
+  <h1>Lorem Ipsum Generator</h1>
+  <div class="utilities">
+    <label for="input">No. of Paragraphs :</label>
   <input type="number" value="0" id="input">
-  <button id="btn">Submit</button>
-  <textarea name="name" rows="8" cols="80" id="output"></textarea>
+  </div>
+  <div class="utilities">
+    <button id="btn">Generate</button>
+    <button id="copy" onclick="copy()">Copy</button>
+  </div>
+
+  <textarea name="name" rows="10" cols="80" id="output" readonly></textarea>
+    <p id="p" class="none">Text copied.</p>
+
+
 </div>
 
 <script src="app.js"></script>
